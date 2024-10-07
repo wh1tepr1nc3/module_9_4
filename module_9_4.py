@@ -2,7 +2,7 @@ from random import choice
 
 first = 'Мама мыла раму'
 second = 'Рамена мало было'
-total = list(map(lambda x, y: x == 'а', first, second))
+total = list(map(lambda x, y: x == y, first, second))
 print(total)
 
 
@@ -11,8 +11,6 @@ def get_advanced_writer(file_name):
         with open(file_name, 'a', encoding='utf-8') as file:
             for item in data_set:
                 file.write(str(item) + '\n')
-        return
-
     return write_everything
 
 
